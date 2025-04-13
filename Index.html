@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JK SAI FARM</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #30B700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 2rem 0;
+      text-align: center;
+      animation: fadeInDown 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      animation: floatText 3s ease-in-out infinite;
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1rem 0;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      position: relative;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    nav a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    main {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-decoration: underline;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+      font-size: 1.1rem;
+      animation: slideInLeft 2s ease-in-out;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 2rem;
+      text-align: center;
+      animation: fadeInUp 3s ease-in-out;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes floatText {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>WELCOME TO JK SAI FARM</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Products.html">Products</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="Team.html">Team</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Fresh from Nature</h2>
+    <p><strong>JK SAI FARM</strong>, your trusted farm for organic and natural produce, is a dedicated agricultural enterprise committed to providing high-quality, naturally grown produce with a focus on sustainability and innovation.</p>
+    <p>Located in a fertile and eco-friendly region, our farm specializes in cultivating a wide range of crops using modern farming techniques while preserving traditional values.</p>
+    <p>At <strong>JK SAI FARM</strong>, we believe in nurturing the soil, supporting local communities, and delivering fresh, chemical-free products straight from our fields to your table. Our mission is to promote healthy living and ensure customer satisfaction through consistent quality and ethical farming practices.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JK SAI FARM. All rights reserved.</p>
+  </footer>
+</body>
+</html>
